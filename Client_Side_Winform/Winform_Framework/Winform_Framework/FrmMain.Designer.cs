@@ -28,22 +28,188 @@
         /// </summary>
         private void InitializeComponent()
         {
+            AntdUI.Tabs.StyleCard styleCard1 = new AntdUI.Tabs.StyleCard();
+            AntdUI.MenuItem menuItem1 = new AntdUI.MenuItem();
+            AntdUI.MenuItem menuItem2 = new AntdUI.MenuItem();
+            AntdUI.MenuItem menuItem3 = new AntdUI.MenuItem();
+            AntdUI.MenuItem menuItem4 = new AntdUI.MenuItem();
+            AntdUI.MenuItem menuItem5 = new AntdUI.MenuItem();
+            AntdUI.MenuItem menuItem6 = new AntdUI.MenuItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
+            this.titlebar = new AntdUI.PageHeader();
+            this.panLeft = new AntdUI.Panel();
+            this.tabsMain = new AntdUI.Tabs();
+            this.pageMain = new AntdUI.TabPage();
+            this.btnCollapse = new AntdUI.Button();
+            this.menuLeft = new AntdUI.Menu();
+            this.dropTranslate = new AntdUI.Dropdown();
+            this.label1 = new AntdUI.Label();
+            this.titlebar.SuspendLayout();
+            this.panLeft.SuspendLayout();
+            this.tabsMain.SuspendLayout();
+            this.pageMain.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // titlebar
+            // 
+            this.titlebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(137)))), ((int)(((byte)(237)))));
+            this.titlebar.Controls.Add(this.dropTranslate);
+            this.titlebar.DividerShow = true;
+            this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.titlebar.ForeColor = System.Drawing.Color.White;
+            this.titlebar.Location = new System.Drawing.Point(0, 0);
+            this.titlebar.Name = "titlebar";
+            this.titlebar.ShowButton = true;
+            this.titlebar.ShowIcon = true;
+            this.titlebar.Size = new System.Drawing.Size(1024, 40);
+            this.titlebar.SubText = "Demo";
+            this.titlebar.TabIndex = 0;
+            this.titlebar.Text = "Main Window";
+            // 
+            // panLeft
+            // 
+            this.panLeft.Back = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(188)))), ((int)(((byte)(236)))));
+            this.panLeft.Controls.Add(this.menuLeft);
+            this.panLeft.Controls.Add(this.btnCollapse);
+            this.panLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panLeft.Location = new System.Drawing.Point(0, 40);
+            this.panLeft.Name = "panLeft";
+            this.panLeft.Radius = 0;
+            this.panLeft.Size = new System.Drawing.Size(58, 600);
+            this.panLeft.TabIndex = 1;
+            this.panLeft.Text = "panel1";
+            // 
+            // tabsMain
+            // 
+            this.tabsMain.Controls.Add(this.pageMain);
+            this.tabsMain.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabsMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabsMain.Gap = 12;
+            this.tabsMain.Location = new System.Drawing.Point(58, 40);
+            this.tabsMain.Name = "tabsMain";
+            this.tabsMain.Pages.Add(this.pageMain);
+            this.tabsMain.Size = new System.Drawing.Size(966, 600);
+            styleCard1.Closable = true;
+            styleCard1.Gap = 6;
+            this.tabsMain.Style = styleCard1;
+            this.tabsMain.TabIndex = 2;
+            this.tabsMain.Text = "tabs1";
+            this.tabsMain.Type = AntdUI.TabType.Card;
+            // 
+            // pageMain
+            // 
+            this.pageMain.Controls.Add(this.label1);
+            this.pageMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pageMain.IconSvg = "HomeOutlined";
+            this.pageMain.Location = new System.Drawing.Point(3, 35);
+            this.pageMain.Name = "pageMain";
+            this.pageMain.Size = new System.Drawing.Size(960, 562);
+            this.pageMain.TabIndex = 0;
+            this.pageMain.Text = "主页";
+            // 
+            // btnCollapse
+            // 
+            this.btnCollapse.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCollapse.Ghost = true;
+            this.btnCollapse.IconRatio = 1F;
+            this.btnCollapse.IconSvg = "MenuUnfoldOutlined";
+            this.btnCollapse.Location = new System.Drawing.Point(0, 560);
+            this.btnCollapse.Name = "btnCollapse";
+            this.btnCollapse.Radius = 0;
+            this.btnCollapse.Size = new System.Drawing.Size(58, 40);
+            this.btnCollapse.TabIndex = 3;
+            this.btnCollapse.ToggleIconSvg = "MenuFoldOutlined";
+            this.btnCollapse.WaveSize = 0;
+            // 
+            // menuLeft
+            // 
+            this.menuLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(188)))), ((int)(((byte)(236)))));
+            this.menuLeft.Collapsed = true;
+            this.menuLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuLeft.Indent = true;
+            menuItem1.IconSvg = "AppstoreOutlined";
+            menuItem2.Text = "菜单1-1";
+            menuItem3.Text = "菜单1-2";
+            menuItem1.Sub.Add(menuItem2);
+            menuItem1.Sub.Add(menuItem3);
+            menuItem1.Text = "菜单1";
+            menuItem4.IconSvg = "LayoutOutlined";
+            menuItem5.Text = "菜单2-1";
+            menuItem6.Text = "菜单2-2";
+            menuItem4.Sub.Add(menuItem5);
+            menuItem4.Sub.Add(menuItem6);
+            menuItem4.Text = "菜单2";
+            this.menuLeft.Items.Add(menuItem1);
+            this.menuLeft.Items.Add(menuItem4);
+            this.menuLeft.Location = new System.Drawing.Point(0, 0);
+            this.menuLeft.Name = "menuLeft";
+            this.menuLeft.Padding = new System.Windows.Forms.Padding(4);
+            this.menuLeft.Size = new System.Drawing.Size(58, 560);
+            this.menuLeft.TabIndex = 1;
+            this.menuLeft.Text = "menu1";
+            // 
+            // dropTranslate
+            // 
+            this.dropTranslate.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dropTranslate.Ghost = true;
+            this.dropTranslate.IconRatio = 0.8F;
+            this.dropTranslate.IconSvg = "TranslationOutlined";
+            this.dropTranslate.Items.AddRange(new object[] {
+            "简体中文",
+            "English"});
+            this.dropTranslate.Location = new System.Drawing.Point(830, 0);
+            this.dropTranslate.Name = "dropTranslate";
+            this.dropTranslate.Placement = AntdUI.TAlignFrom.BR;
+            this.dropTranslate.Size = new System.Drawing.Size(50, 40);
+            this.dropTranslate.TabIndex = 0;
+            this.dropTranslate.Trigger = AntdUI.Trigger.Hover;
+            this.dropTranslate.WaveSize = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSizeMode = AntdUI.TAutoSize.Auto;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(362, 255);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(236, 53);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "欢 迎 使 用！";
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1062, 724);
-            this.Font = new System.Drawing.Font("微软雅黑", 10.5F);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ClientSize = new System.Drawing.Size(1024, 640);
+            this.ControlBox = false;
+            this.Controls.Add(this.tabsMain);
+            this.Controls.Add(this.panLeft);
+            this.Controls.Add(this.titlebar);
+            this.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FrmMain";
-            this.Text = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Main Window";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.titlebar.ResumeLayout(false);
+            this.panLeft.ResumeLayout(false);
+            this.tabsMain.ResumeLayout(false);
+            this.pageMain.ResumeLayout(false);
+            this.pageMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private AntdUI.PageHeader titlebar;
+        private AntdUI.Panel panLeft;
+        private AntdUI.Tabs tabsMain;
+        private AntdUI.TabPage pageMain;
+        private AntdUI.Menu menuLeft;
+        private AntdUI.Button btnCollapse;
+        private AntdUI.Dropdown dropTranslate;
+        private AntdUI.Label label1;
     }
 }
