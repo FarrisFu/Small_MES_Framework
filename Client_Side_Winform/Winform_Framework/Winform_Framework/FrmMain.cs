@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Winform_Framework.Service;
+using Winform_Framework.Service.LocalDB;
 
 namespace Winform_Framework
 {
@@ -22,7 +24,7 @@ namespace Winform_Framework
         private void FrmMain_Load(object sender, EventArgs e)
         {
             LoadPage();
-
+            var xx = LocalDataService.GetMeunLIst();
             //LoadLeftMenu();
 
         }
