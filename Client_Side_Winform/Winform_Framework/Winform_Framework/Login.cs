@@ -31,15 +31,17 @@ namespace Winform_Framework
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            AntdUI.Modal.open(new AntdUI.Modal.Config(this, "提示", "登录成功", AntdUI.TType.Success)
-            {
-                OnButtonStyle = (id, btn) =>
-                {
-                    btn.BackExtend = "135, #6253E1, #04BEFE";
-                },
-                CancelText = null,
-                OkText = "OK"
-            });
+            DialogService.Success(this, "登录成功");
+
+            //AntdUI.Modal.open(new AntdUI.Modal.Config(this, "提示", "登录成功", AntdUI.TType.Success)
+            //{
+            //    OnButtonStyle = (id, btn) =>
+            //    {
+            //        btn.BackExtend = "135, #6253E1, #04BEFE";
+            //    },
+            //    CancelText = null,
+            //    OkText = "OK"
+            //});
         }
     }
 }

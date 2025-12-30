@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winform_Framework", "Winfor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolHelperClass", "ToolHelperClass\ToolHelperClass.csproj", "{67C353B6-44B8-4AFB-BD4F-099C0D453EF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmOperationLogView", "PluginWindows\FrmOperationLogView\FrmOperationLogView.csproj", "{4EDCC398-7532-49ED-A7DE-4B69EF93246B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmPCBOperation", "PluginWindows\FrmPCBOperation\FrmPCBOperation.csproj", "{FC5CD24C-4421-41CB-B543-B5881E34F7A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,22 @@ Global
 		{67C353B6-44B8-4AFB-BD4F-099C0D453EF3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{67C353B6-44B8-4AFB-BD4F-099C0D453EF3}.Release|x64.ActiveCfg = Release|x64
 		{67C353B6-44B8-4AFB-BD4F-099C0D453EF3}.Release|x64.Build.0 = Release|x64
+		{4EDCC398-7532-49ED-A7DE-4B69EF93246B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EDCC398-7532-49ED-A7DE-4B69EF93246B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EDCC398-7532-49ED-A7DE-4B69EF93246B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4EDCC398-7532-49ED-A7DE-4B69EF93246B}.Debug|x64.Build.0 = Debug|Any CPU
+		{4EDCC398-7532-49ED-A7DE-4B69EF93246B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EDCC398-7532-49ED-A7DE-4B69EF93246B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EDCC398-7532-49ED-A7DE-4B69EF93246B}.Release|x64.ActiveCfg = Release|Any CPU
+		{4EDCC398-7532-49ED-A7DE-4B69EF93246B}.Release|x64.Build.0 = Release|Any CPU
+		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Debug|x64.Build.0 = Debug|Any CPU
+		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Release|x64.ActiveCfg = Release|Any CPU
+		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

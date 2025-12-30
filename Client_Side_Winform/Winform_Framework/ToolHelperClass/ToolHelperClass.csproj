@@ -76,6 +76,7 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -84,10 +85,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SqlsugarDbRepository.cs" />
-    <Compile Include="SqlsugarDb.cs" />
+    <Compile Include="DialogService.cs" />
+    <Compile Include="LocalDataService.cs" />
+    <Compile Include="LocalData\DbEntity\DictionaryEntity.cs" />
+    <Compile Include="LocalData\DbEntity\MenuEntity.cs" />
+    <Compile Include="LocalData\DbEntity\UserEntity.cs" />
+    <Compile Include="LocalData\SqlsugarDbRepository.cs" />
+    <Compile Include="LocalData\SqlsugarDb.cs" />
     <Compile Include="HttpAPIService.cs" />
-    <Compile Include="LogService\LogService.cs" />
+    <Compile Include="LogService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

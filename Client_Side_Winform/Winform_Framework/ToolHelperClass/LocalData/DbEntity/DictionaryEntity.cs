@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Winform_Framework.Service.LocalDB
+namespace ToolHelperClass
 {
     [SugarTable("TAB_Dictionary", TableDescription = "通用字典")]
     public class DictionaryEntity
