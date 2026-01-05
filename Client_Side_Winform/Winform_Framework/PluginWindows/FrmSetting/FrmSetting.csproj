@@ -1,20 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{43F1697D-6A45-4AEA-803E-C3CDD376F5DF}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Winform_Framework</RootNamespace>
-    <AssemblyName>Winform_Framework</AssemblyName>
+    <ProjectGuid>{1926E528-B827-4B32-BD94-831EFBB0FA6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FrmSetting</RootNamespace>
+    <AssemblyName>FrmSetting</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -32,25 +32,19 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AntdUI, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0e24e5118ea3d6af, processorArchitecture=MSIL">
-      <HintPath>..\packages\AntdUI.2.1.0\lib\net48\AntdUI.dll</HintPath>
+      <HintPath>..\..\packages\AntdUI.2.1.0\lib\net48\AntdUI.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=3.2.0.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.3.2.0\lib\net462\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="SqlSugar, Version=5.1.4.207, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SqlSugar.5.1.4.207\lib\SqlSugar.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SQLite, Version=2.0.2.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SQLite.2.0.2\lib\net471\System.Data.SQLite.dll</HintPath>
-    </Reference>
     <Reference Include="System.Design" />
-    <Reference Include="System.Transactions" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,34 +56,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmMain.cs">
+    <Compile Include="FrmSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMain.Designer.cs">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\MenuIcon.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\MenuIcon.Designer.cs">
-      <DependentUpon>MenuIcon.cs</DependentUpon>
+    <Compile Include="FrmSetting.Designer.cs">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmMain.resx">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\MenuIcon.resx">
-      <DependentUpon>MenuIcon.cs</DependentUpon>
+    <Compile Include="SettingParameters.cs" />
+    <EmbeddedResource Include="FrmSetting.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,7 +76,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -116,33 +92,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PluginWindows\FrmLogViewer\FrmLogViewer.csproj">
-      <Project>{160100a0-f5a8-4110-86ac-e4ea315cc4ad}</Project>
-      <Name>FrmLogViewer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PluginWindows\FrmOperationLogView\FrmOperationLogView.csproj">
-      <Project>{4edcc398-7532-49ed-a7de-4b69ef93246b}</Project>
-      <Name>FrmOperationLogView</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PluginWindows\FrmPCBOperation\FrmPCBOperation.csproj">
-      <Project>{fc5cd24c-4421-41cb-b543-b5881e34f7a8}</Project>
-      <Name>FrmPCBOperation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PluginWindows\FrmSetting\FrmSetting.csproj">
-      <Project>{1926e528-b827-4b32-bd94-831efbb0fa6d}</Project>
-      <Name>FrmSetting</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ToolHelperClass\ToolHelperClass.csproj">
+    <ProjectReference Include="..\..\ToolHelperClass\ToolHelperClass.csproj">
       <Project>{67c353b6-44b8-4afb-bd4f-099c0d453ef3}</Project>
       <Name>ToolHelperClass</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\渐变蓝色背景图.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\软件图标.png" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,6 +15,7 @@ namespace Winform_Framework
         public Login()
         {
             InitializeComponent();
+            DialogService.mainForm = this;
         }
 
         private void txtUserName_KeyPress(object sender, KeyPressEventArgs e)
@@ -31,7 +32,7 @@ namespace Winform_Framework
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            DialogService.Success(this, "登录成功");
+            DialogService.Success( "登录成功");
 
             //AntdUI.Modal.open(new AntdUI.Modal.Config(this, "提示", "登录成功", AntdUI.TType.Success)
             //{

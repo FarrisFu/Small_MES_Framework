@@ -144,7 +144,7 @@
             // tabsMain
             // 
             this.tabsMain.Controls.Add(this.pageMain);
-            this.tabsMain.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tabsMain.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabsMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabsMain.Gap = 12;
             this.tabsMain.Location = new System.Drawing.Point(50, 40);
@@ -169,7 +169,7 @@
             this.pageMain.Location = new System.Drawing.Point(3, 35);
             this.pageMain.Margin = new System.Windows.Forms.Padding(4);
             this.pageMain.Name = "pageMain";
-            this.pageMain.Padding = new System.Windows.Forms.Padding(4);
+            this.pageMain.Padding = new System.Windows.Forms.Padding(16);
             this.pageMain.Size = new System.Drawing.Size(968, 562);
             this.pageMain.TabIndex = 0;
             this.pageMain.Text = "主页";
@@ -178,18 +178,18 @@
             // 
             this.flpan2.BackColor = System.Drawing.SystemColors.Control;
             this.flpan2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flpan2.Location = new System.Drawing.Point(4, 164);
+            this.flpan2.Location = new System.Drawing.Point(16, 182);
             this.flpan2.Name = "flpan2";
-            this.flpan2.Size = new System.Drawing.Size(960, 150);
+            this.flpan2.Size = new System.Drawing.Size(936, 150);
             this.flpan2.TabIndex = 5;
             // 
             // panel3
             // 
             this.panel3.Back = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(4, 154);
+            this.panel3.Location = new System.Drawing.Point(16, 166);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(960, 10);
+            this.panel3.Size = new System.Drawing.Size(936, 16);
             this.panel3.TabIndex = 3;
             this.panel3.Text = "panel3";
             // 
@@ -197,9 +197,9 @@
             // 
             this.flpan1.BackColor = System.Drawing.SystemColors.Control;
             this.flpan1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flpan1.Location = new System.Drawing.Point(4, 4);
+            this.flpan1.Location = new System.Drawing.Point(16, 16);
             this.flpan1.Name = "flpan1";
-            this.flpan1.Size = new System.Drawing.Size(960, 150);
+            this.flpan1.Size = new System.Drawing.Size(936, 150);
             this.flpan1.TabIndex = 4;
             // 
             // FrmMain

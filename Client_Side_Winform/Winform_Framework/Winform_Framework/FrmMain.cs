@@ -21,6 +21,7 @@ namespace Winform_Framework
         public FrmMain()
         {
             InitializeComponent();
+            DialogService.mainForm = this;
         }
         /// <summary>
         /// 窗体加载事件
@@ -69,7 +70,7 @@ namespace Winform_Framework
             {
 
                 LogService.Error("加载主菜单异常", ex);
-                DialogService.Error(this, "错误", "加载主菜单异常");
+                DialogService.Error( "错误", "加载主菜单异常");
             }
 
         }
@@ -151,7 +152,7 @@ namespace Winform_Framework
             catch (Exception ex)
             {
                 LogService.Error("加载左侧菜单异常", ex);
-                DialogService.Error(this, "错误", "加载左侧菜单异常");
+                DialogService.Error( "错误", "加载左侧菜单异常");
             }
 
         }
@@ -205,7 +206,7 @@ namespace Winform_Framework
                         if (formType == null)
                         {
                             LogService.Warn(newPage.Text + "菜单对应的窗体类不存在");
-                            DialogService.Warn(this, "警告", newPage.Text + "菜单对应的窗体类不存在");
+                            DialogService.Warn( "警告", newPage.Text + "菜单对应的窗体类不存在");
                             return;
                         }
 
@@ -229,7 +230,7 @@ namespace Winform_Framework
             catch (Exception ex)
             {
                 LogService.Error("打开菜单异常", ex);
-                DialogService.Error(this, "错误", "打开菜单异常");
+                DialogService.Error( "错误", "打开菜单异常");
             }
         }
 

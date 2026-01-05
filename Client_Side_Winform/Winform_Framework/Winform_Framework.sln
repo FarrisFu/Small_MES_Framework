@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmOperationLogView", "Plug
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmPCBOperation", "PluginWindows\FrmPCBOperation\FrmPCBOperation.csproj", "{FC5CD24C-4421-41CB-B543-B5881E34F7A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmSetting", "PluginWindows\FrmSetting\FrmSetting.csproj", "{1926E528-B827-4B32-BD94-831EFBB0FA6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmLogViewer", "PluginWindows\FrmLogViewer\FrmLogViewer.csproj", "{160100A0-F5A8-4110-86AC-E4EA315CC4AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,22 @@ Global
 		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Release|x64.ActiveCfg = Release|Any CPU
 		{FC5CD24C-4421-41CB-B543-B5881E34F7A8}.Release|x64.Build.0 = Release|Any CPU
+		{1926E528-B827-4B32-BD94-831EFBB0FA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1926E528-B827-4B32-BD94-831EFBB0FA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1926E528-B827-4B32-BD94-831EFBB0FA6D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1926E528-B827-4B32-BD94-831EFBB0FA6D}.Debug|x64.Build.0 = Debug|Any CPU
+		{1926E528-B827-4B32-BD94-831EFBB0FA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1926E528-B827-4B32-BD94-831EFBB0FA6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1926E528-B827-4B32-BD94-831EFBB0FA6D}.Release|x64.ActiveCfg = Release|Any CPU
+		{1926E528-B827-4B32-BD94-831EFBB0FA6D}.Release|x64.Build.0 = Release|Any CPU
+		{160100A0-F5A8-4110-86AC-E4EA315CC4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160100A0-F5A8-4110-86AC-E4EA315CC4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160100A0-F5A8-4110-86AC-E4EA315CC4AD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{160100A0-F5A8-4110-86AC-E4EA315CC4AD}.Debug|x64.Build.0 = Debug|Any CPU
+		{160100A0-F5A8-4110-86AC-E4EA315CC4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160100A0-F5A8-4110-86AC-E4EA315CC4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{160100A0-F5A8-4110-86AC-E4EA315CC4AD}.Release|x64.ActiveCfg = Release|Any CPU
+		{160100A0-F5A8-4110-86AC-E4EA315CC4AD}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

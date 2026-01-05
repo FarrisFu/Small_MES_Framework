@@ -9,11 +9,12 @@ namespace ToolHelperClass
 {
     public class DialogService
     {
+        public static Form mainForm;
         public DialogService() { }
 
-        public static void Success(Form form, string content, string title = "成功")
+        public static void Success( string content, string title = "成功")
         {
-            AntdUI.Modal.open(new AntdUI.Modal.Config(form, title, content, AntdUI.TType.Success)
+            AntdUI.Modal.open(new AntdUI.Modal.Config(mainForm, title, content, AntdUI.TType.Success)
             {
                 OnButtonStyle = (id, btn) =>
                 {
@@ -23,17 +24,17 @@ namespace ToolHelperClass
                 OkText = "OK"
             });
         }
-        public static void Error(Form form, string content, string title = "错误")
+        public static void Error(string content, string title = "错误")
         {
-            AntdUI.Modal.open(new AntdUI.Modal.Config(form, title, content, AntdUI.TType.Error)
+            AntdUI.Modal.open(new AntdUI.Modal.Config(mainForm, title, content, AntdUI.TType.Error)
             {
 
             });
         }
 
-        public static void Warn(Form form, string content, string title = "警告")
+        public static void Warn(string content, string title = "警告")
         {
-            AntdUI.Modal.open(new AntdUI.Modal.Config(form, title, content, AntdUI.TType.Warn)
+            AntdUI.Modal.open(new AntdUI.Modal.Config(mainForm, title, content, AntdUI.TType.Warn)
             {
                 OnButtonStyle = (id, btn) =>
                 {

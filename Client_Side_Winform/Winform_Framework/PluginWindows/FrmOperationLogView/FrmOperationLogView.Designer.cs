@@ -29,52 +29,28 @@
         private void InitializeComponent()
         {
             this.panel1 = new AntdUI.Panel();
-            this.panel2 = new AntdUI.Panel();
-            this.input1 = new AntdUI.Input();
-            this.label1 = new AntdUI.Label();
             this.label2 = new AntdUI.Label();
+            this.label1 = new AntdUI.Label();
+            this.input1 = new AntdUI.Input();
+            this.panel2 = new AntdUI.Panel();
+            this.panel3 = new AntdUI.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(200)))), ((int)(((byte)(204)))));
+            this.panel1.BorderWidth = 2F;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.input1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(16, 16);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(960, 150);
+            this.panel1.Size = new System.Drawing.Size(928, 150);
             this.panel1.TabIndex = 0;
             this.panel1.Text = "panel1";
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 150);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(960, 390);
-            this.panel2.TabIndex = 1;
-            this.panel2.Text = "panel2";
-            // 
-            // input1
-            // 
-            this.input1.Location = new System.Drawing.Point(700, 49);
-            this.input1.Name = "input1";
-            this.input1.Size = new System.Drawing.Size(200, 45);
-            this.input1.TabIndex = 0;
-            this.input1.Text = "input1";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 16F);
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "操作记录查询";
             // 
             // label2
             // 
@@ -85,16 +61,57 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "SN:";
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 16F);
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 30);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "操作记录查询";
+            // 
+            // input1
+            // 
+            this.input1.Location = new System.Drawing.Point(700, 49);
+            this.input1.Name = "input1";
+            this.input1.Size = new System.Drawing.Size(200, 45);
+            this.input1.TabIndex = 0;
+            this.input1.Text = "input1";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(200)))), ((int)(((byte)(204)))));
+            this.panel2.BorderWidth = 2F;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(16, 182);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(928, 358);
+            this.panel2.TabIndex = 1;
+            this.panel2.Text = "panel2";
+            // 
+            // panel3
+            // 
+            this.panel3.Back = System.Drawing.SystemColors.Control;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(16, 166);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(928, 16);
+            this.panel3.TabIndex = 2;
+            this.panel3.Text = "panel3";
+            // 
             // FrmOperationLogView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 540);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "FrmOperationLogView";
+            this.Padding = new System.Windows.Forms.Padding(16, 16, 16, 0);
             this.Text = "FrmOperationLogView";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -108,5 +125,6 @@
         private AntdUI.Input input1;
         private AntdUI.Label label1;
         private AntdUI.Label label2;
+        private AntdUI.Panel panel3;
     }
 }

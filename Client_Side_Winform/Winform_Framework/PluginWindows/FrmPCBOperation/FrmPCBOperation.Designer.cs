@@ -35,19 +35,22 @@
             this.panel2 = new AntdUI.Panel();
             this.label2 = new AntdUI.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel3 = new AntdUI.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(200)))), ((int)(((byte)(204)))));
+            this.panel1.BorderWidth = 2F;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.input1);
             this.panel1.Controls.Add(this.lbTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(16, 16);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(960, 150);
+            this.panel1.Size = new System.Drawing.Size(928, 150);
             this.panel1.TabIndex = 0;
             this.panel1.Text = "panel1";
             // 
@@ -72,7 +75,7 @@
             // 
             this.lbTitle.AutoSizeMode = AntdUI.TAutoSize.Auto;
             this.lbTitle.Font = new System.Drawing.Font("微软雅黑", 16F);
-            this.lbTitle.Location = new System.Drawing.Point(12, 12);
+            this.lbTitle.Location = new System.Drawing.Point(14, 14);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(107, 29);
             this.lbTitle.TabIndex = 0;
@@ -80,12 +83,14 @@
             // 
             // panel2
             // 
+            this.panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(200)))), ((int)(((byte)(204)))));
+            this.panel2.BorderWidth = 2F;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 150);
+            this.panel2.Location = new System.Drawing.Point(16, 182);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(960, 390);
+            this.panel2.Size = new System.Drawing.Size(928, 358);
             this.panel2.TabIndex = 1;
             this.panel2.Text = "panel2";
             // 
@@ -100,11 +105,21 @@
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(0, 41);
+            this.textBox1.Location = new System.Drawing.Point(2, 57);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(960, 349);
+            this.textBox1.Size = new System.Drawing.Size(924, 299);
             this.textBox1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Back = System.Drawing.SystemColors.Control;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(16, 166);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(928, 16);
+            this.panel3.TabIndex = 2;
+            this.panel3.Text = "panel3";
             // 
             // FrmPCBOperation
             // 
@@ -112,10 +127,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 540);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "FrmPCBOperation";
+            this.Padding = new System.Windows.Forms.Padding(16, 16, 16, 0);
             this.Text = "FrmPCBOperation";
             this.Load += new System.EventHandler(this.FrmPCBOperation_Load);
             this.panel1.ResumeLayout(false);
@@ -135,5 +152,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private AntdUI.Label label3;
         private AntdUI.Input input1;
+        private AntdUI.Panel panel3;
     }
 }
