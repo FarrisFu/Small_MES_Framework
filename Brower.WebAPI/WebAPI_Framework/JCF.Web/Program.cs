@@ -14,6 +14,10 @@ namespace JCF.Web
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.WebHost.ConfigureKestrel(options =>
+            {
+                //options.ListenAnyIP(8090);
+            });
 
             //添加Log4Net日志组件扩展
             builder.AddLog4Net();
