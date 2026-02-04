@@ -10,6 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JCF.Common\JCF.Common.csproj" />
+    <ProjectReference Include="..\JCF.Module.Common\JCF.Module.Common.csproj" />
     <ProjectReference Include="..\JCF.Module.Login\JCF.Module.Login.csproj" />
     <ProjectReference Include="..\JCF.Module.Main\JCF.Module.Main.csproj" />
     <ProjectReference Include="..\JCF.Service\JCF.Service.csproj" />

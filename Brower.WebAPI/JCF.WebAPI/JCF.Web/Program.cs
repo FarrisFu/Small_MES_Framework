@@ -45,6 +45,7 @@ namespace JCF.Web
 
             //添加Jwt认证服务扩展
             builder.Services.AddJwtAuthentication(builder.Configuration);
+
             //添加授权策略服务扩展
             builder.Services.AddAuthorizationPolicies();
 

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JCF.Module.Main", "JCF.Modu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JCF.Module.Login", "JCF.Module.Login\JCF.Module.Login.csproj", "{079714F9-6C44-4415-917B-88C7E936322A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JCF.Module.Common", "JCF.Module.Common\JCF.Module.Common.csproj", "{A4A45068-AEF4-AF89-C5A6-604B974A708F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{079714F9-6C44-4415-917B-88C7E936322A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{079714F9-6C44-4415-917B-88C7E936322A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{079714F9-6C44-4415-917B-88C7E936322A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A45068-AEF4-AF89-C5A6-604B974A708F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A45068-AEF4-AF89-C5A6-604B974A708F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A45068-AEF4-AF89-C5A6-604B974A708F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A45068-AEF4-AF89-C5A6-604B974A708F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +96,7 @@ Global
 		{040D1FA6-A608-2524-2DD9-7E5334D570BC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{FF493F0B-0CD6-4D1C-B198-2BD66EE5453C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{079714F9-6C44-4415-917B-88C7E936322A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A4A45068-AEF4-AF89-C5A6-604B974A708F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93E18902-DBB5-46A1-8EDA-783F6955FB22}

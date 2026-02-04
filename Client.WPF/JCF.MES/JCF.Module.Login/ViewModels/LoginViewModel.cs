@@ -1,9 +1,11 @@
-﻿using JCF.Service.HttpCore;
+﻿using JCF.Common;
+using JCF.Service.HttpCore;
 using JCF.Service.IServices;
 using JCF.Service.ModelRequests;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
+using Prism.Services.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,10 +18,12 @@ namespace JCF.Module.Login.ViewModels
     {
         private readonly IAuthorizeService _authService;
         private readonly IRegionManager _regionManager;
-        public LoginViewModel(IAuthorizeService authService, IRegionManager regionManager)
+        private readonly IDialogService _IDialogService;
+        public LoginViewModel(IAuthorizeService authService, IRegionManager regionManager, IDialogService dialogService)
         {
             _authService = authService;
             _regionManager = regionManager;
+            _IDialogService = dialogService;
             LoginCommand = new DelegateCommand(async () => await Login());
         }
         
@@ -29,19 +33,31 @@ namespace JCF.Module.Login.ViewModels
 
         private async Task Login()
         {
-            //var result = await _authService.Login(UserName, Password);
-            var result = await _authService.Login(new LoginRequest() { UserName = UserName, Password = Password });
-
-            if (result.Success)
+            IsBusy = true;
+            try
             {
-                JwtTokenProvider.SetToken(result.Data.Token);
-                // 登录成功，导航到 MainView
-                _regionManager.RequestNavigate("MainRegion", "MainView");
+                //var result = await _authService.Login(UserName, Password);
+                var result = await _authService.Login(new LoginRequest() { UserName = UserName, Password = Password });               
+                if (result.Success)
+                {
+                    JwtTokenProvider.SetToken(result.Data.Token);
+                    // 登录成功，导航到 MainView
+                    _regionManager.RequestNavigate("MainRegion", "MainView");
+                }
+                else
+                {
+                    Error = "登录失败,请检查用户名和密码是否匹配";
+                }
             }
-            else
+            catch (Exception ex)
+            {               
+                LogService.Error("登录异常",ex);
+            }
+            finally
             {
-                Error = "登录失败,请检查用户名和密码是否匹配";
+                IsBusy = false;
             }
+           
         }
         #region 命令
         public DelegateCommand LoginCommand { get; }
@@ -68,6 +84,20 @@ namespace JCF.Module.Login.ViewModels
         {
             get { return _Error; }
             set { SetProperty(ref _Error, value); }
+        }
+
+        private bool _IsBusy;
+        public bool IsBusy
+        {
+            get { return _IsBusy; }
+            set { SetProperty(ref _IsBusy, value); }
+        }
+
+        private string _LoadingText = "正在加载数据...";
+        public string LoadingText
+        {
+            get { return _LoadingText; }
+            set { SetProperty(ref _LoadingText, value); }
         }
         #endregion
 
