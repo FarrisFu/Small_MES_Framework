@@ -8,7 +8,6 @@
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JCF.Common\JCF.Common.csproj" />
-    <ProjectReference Include="..\JCF.Service\JCF.Service.csproj" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

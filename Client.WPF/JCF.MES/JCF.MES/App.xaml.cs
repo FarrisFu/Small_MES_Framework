@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Windows;
 using DryIoc;
 using JCF.MES.Views;
+using JCF.Module.Common;
 using JCF.Module.Login;
 using JCF.Module.Main;
 using JCF.Service;
@@ -29,8 +30,8 @@ namespace JCF.MES
         {
             base.OnInitialized();
             var regionManager = Container.Resolve<IRegionManager>();
-            //regionManager.RequestNavigate("MainRegion", "MainView");
-            regionManager.RequestNavigate("MainRegion", "LoginView");
+            regionManager.RequestNavigate("MainRegion", "MainView");
+            //regionManager.RequestNavigate("MainRegion", "LoginView");
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
@@ -42,6 +43,7 @@ namespace JCF.MES
         {
             moduleCatalog.AddModule<LoginModule>();
             moduleCatalog.AddModule<MainModule>();
+            moduleCatalog.AddModule<CommonModule>();
         }
 
         /// <summary>

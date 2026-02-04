@@ -18,6 +18,12 @@ namespace JCF.Web.Extension.Authorize
 
                 options.AddPolicy("SystemConfig",
                     p => p.RequireClaim("permission", "system.config"));
+
+                options.AddPolicy("OperationLogRead",
+                   p => p.RequireClaim("permission", "operationLog.read"));
+
+                options.AddPolicy("OrderWrite",
+                   p => p.RequireClaim("permission", "order.write"));
             });
 
             return services;
