@@ -84,7 +84,7 @@
   
 <img src="img/mes.png" alt="MES客户端架构">
 
-*图4：订单界面*
+
 <img src="img/mes1.png" width="500" alt="订单界面">
 
 
