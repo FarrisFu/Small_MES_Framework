@@ -35,7 +35,7 @@
 | **MES 客户端** | 工艺管理中枢 | 二线工艺人员 | 生产流程管控、订单计划、参数配置、质量管理 |
 | **WinForm 客户端** | 一线执行终端 | 一线操作人员 | 工序操作、现场数据采集、生产执行 |
 
-![整体架构图](https://raw.githubusercontent.com/[你的仓库URL]/[你的分支名]/Docs/Architecture/Overall_Architecture.png)
+![整体架构图](img/all.png)
 *图1：系统整体架构图*
 
 ---
