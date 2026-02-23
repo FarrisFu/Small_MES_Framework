@@ -4,7 +4,7 @@
 ![.NET Version](https://img.shields.io/badge/.NET-6.0+-green.svg)
 ![WPF](https://img.shields.io/badge/UI-WPF%20%7C%20WinForm-purple.svg)
 
-一套轻量、可扩展、面向中小型制造企业的 MES（manufacturing execution system 制造执行系统）整体解决方案框架。采用 **WebApi 后端 + 双客户端** 架构，实现从工艺定义、任务下发到现场执行、数据闭环的全生产流程管控。
+一套轻量、可扩展、面向中小型制造企业的 MES（manufacturing execution system 制造执行系统）整体解决方案框架。采用 **WebApi 后端 + 双客户端** 架构，支持模块化扩展与快速部署，用于解决车间生产数字化、规范化管理问题。
 
 A lightweight and scalable small MES framework designed for small and medium-sized manufacturers.
 It provides a complete Manufacturing Execution System solution, built on a Web API backend with two client applications.
