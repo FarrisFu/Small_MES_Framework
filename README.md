@@ -6,9 +6,9 @@
 
 一套轻量、可扩展、面向中小型制造企业的 MES（manufacturing execution system 制造执行系统）整体解决方案框架。采用 **WebApi 后端 + 双客户端** 架构，支持模块化扩展与快速部署，用于解决车间生产数字化、规范化管理问题。
 
-A lightweight and scalable small MES framework designed for small and medium-sized manufacturers.
-It provides a complete Manufacturing Execution System solution, built on a Web API backend with two client applications.
-The system manages the entire production workflow — from process setup and task assignment to shop-floor execution and data feedback — enabling closed-loop production control.
+A lightweight and scalable MES solution framework designed for small and medium-sized manufacturing companies.
+It is built on a Web API backend with a dual-client architecture, supporting modular expansion and fast deployment.
+The system helps factories digitalize shop-floor operations and achieve standardized production management.
 
 ---
 
